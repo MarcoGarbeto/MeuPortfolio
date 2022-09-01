@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Tabela de Pagamentos</title>
+  </head>
+  <body id="body">
+    <h1>Entrada de Pagamentos</h1>
+    <main id="main">
+      <p>
+        <label for="input-date">Data:</label>
+        <input id="input-date" value="20/08/2022" type="text" />
+      </p>
+      <p>
+        <label for="input-classification">Classificação:</label>
+        <input id="input-classification" value="Comida" type="text" />
+      </p>
+      <p>
+        <label for="input-observation">Observação:</label>
+        <input id="input-observation" value="Padaria" type="text" />
+      </p>
+      <p>
+        <label for="input-value">Valor:</label>
+        <input id="input-value" value="R$5,00" type="text" />
+      </p>
+      <p>
+        <label for="input-card">Cartões:</label>
+        <input id="input-card" value="NuBank" type="text" />
+      </p>
+      <p>
+        <label for="input-pag">Tipo de Pagamento:</label>
+        <input id="input-pag" value="Crédito" type="text" />
+      </p>
+      <p>
+        <label for="input-month">Mês Referente:</label>
+        <input id="input-month" value="9" type="text" />
+      </p>
+      <button id="button-return">Voltar</button>
+
+      <button id="button-input-data">Entrar com os dados</button>
+      <button id="button-remove-all-data">Remove todas as linhas</button>
+      <button id="button-remove-a-line" class="button-remove">Remove uma linha</button>
+      <p>
+        <h2>Tabela de Pagamentos</h2>
+      </p>
+    </main>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/scriptTabela.js"></script>
+  </body>
+</html>

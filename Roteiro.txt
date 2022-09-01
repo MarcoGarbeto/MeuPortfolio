@@ -1,0 +1,10 @@
+Roteiro Controle de Dinheiro
+
+() Criar tabela
+() Criar página em que ficará o input de dados de pagamentos
+() Criar a conexão entre os dados da página de pagamentos e tabela
+() Criar página em que ficará o input de dados dos cartões e vencimentos
+() Criar a conexão entre os dados da página de cartões com a tabela
+
+CSS:
+() Customizar as páginas e tabelas
