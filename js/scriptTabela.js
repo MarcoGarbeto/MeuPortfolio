@@ -1,3 +1,5 @@
+start();
+// window.localStorage.clear();
 function start() {
   startTable();
   getElementByLocalStorage();
@@ -13,8 +15,6 @@ function TesteRemove() {
   console.log('remove');
 }
 
-start();
-
 function startTable() {
   table = createTable();
   tHead = createElementHead(table);
@@ -28,7 +28,7 @@ function createTable() {
   // Cria a tabela e o cabeçalho
   const table = document.createElement('table');
 
-  document.getElementById('main').appendChild(table);
+  document.getElementById('div-table').appendChild(table);
 
   return table;
 }
@@ -198,6 +198,7 @@ function saveRowOfTable(elements) {
   let saveName = 'RowSave ' + (lengthRowSaves + 1);
   console.log(saveName);
   localStorage.setItem(saveName, (dadosString = JSON.stringify(dados)));
+  location.reload();
 }
 
 function SeparateString(row) {
@@ -222,10 +223,6 @@ function SeparateString(row) {
 }
 
 function getElementByLocalStorage() {
-  // if (window.localStorage) {
-  //   return;
-  // }
-  // Mudar o nome dos json salvo
   let lengthRowSaves = window.localStorage.length;
   for (let i = 1; i < lengthRowSaves + 1; i++) {
     let loadName = 'RowSave ' + i;
